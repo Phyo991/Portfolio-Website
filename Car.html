@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-left: 80px;
+            padding-right: 80px;
+            text-align: center;
+            background-color: black; 
+            color: white; 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Adds space below each image */
+        }
+        p, .image-gallery {
+            font-size: 30px; /* Sets paragraph font size */
+            margin: 20px; /* Adds margin around the paragraph for spacing */
+        }
+        h1 {
+            font-size: 34px; /* Adjust size as needed */
+            margin-top: 40px; /* Adds space above the title */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            p, .image-gallery {
+                font-size: 14px;
+            }
+            .image-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust based on desired number of images per row or column */
+                gap: 10px;
+            }
+            img {
+                width: 100%; /* Ensures images are fully responsive */
+            }
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout for larger screens */
+            gap: 20px;
+            margin-top: 20px; /* Adds space above the image gallery */
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to Self-Driving Cars</h1>
+    <img src="images/car.pdf" alt="IBM AI Engineering Professional Certificate">
+    <p>This course, titled "Introduction to Self-Driving Cars," is provided by the University of Toronto. It equips participants with the ability to comprehend the hardware commonly employed in self-driving vehicles, identify the critical elements of the software stack for autonomous driving.</p>
+</body>
+</html>

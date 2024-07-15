@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device,initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcb26ee290.js" crossorigin="anonymous"></script>
+<body>
+<div id="header">
+    <div class="contatiner">
+        <nav>
+            <img src = "images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+            <p>Passionate about Computer Vision <br>|Software QC QA Engineer</p>
+            <h1>Hi, I'm <span>Phyo</span><br>Theingi From Myanmar</h1>
+        </div>
+    </div>
+</div>
+<!------------------about---------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Switching my major to Software Engineering ignited my tech journey, further fueled at the Vietnam Datathon Hackathon in 2023 where I discovered my passion for AI. Now focused on Computer Vision in the automotive industry, I aim to master AI for innovative solutions. Explore my portfolio to see my progress.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning :</span> 
+                            <span style="color: #ffffff;">Classification | Clustering | Regression | Scikit-learn | Scipy | Recommender Systems</span>
+                        </li>
+                        <li><span>Deep Learning :</span> 
+                            <span style="color: #ffffff;">Deep Neural Networks | PyTorch | Keras | TensorFlow</span>
+                        </li>                          
+                        <li><span>Computer vision :</span> 
+                            <span style="color: #ffffff;">Image Processing </span>
+                        </li>  
+                        <li><span>IOS Mobile Development :</span> 
+                            <span style="color: #ffffff;">Swift | Swift UI </span>
+                        </li>
+                        <li><span>Software Testing :</span> 
+                            <span style="color: #ffffff;">Postman tool | API testing </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Vietnam Datathon 2023</span><br>Vietnam Datathon (VNDH) is a 24-hour Data Hackathon event for undergraduate students from all over Vietnam. By working together in teams to generate insights and potential data science solutions, they will solve practical problems through the application of data science tools and techniques.</li>
+                        <li><span>QCQA Engineer Intenship</span><br>In my role, I specialize in crafting detailed test cases for both web and mobile applications, ensuring comprehensive coverage across all user scenarios. My expertise extends to rigorously testing APIs for functionality and reliability, as well as validating database integrity and performance to guarantee seamless user experiences. This multifaceted approach to quality assurance underpins my commitment to delivering robust and user-friendly digital solutions.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2022</span><br class="school">Business Management at YOUTH International University, Myanamr</li>
+                        <li><span>2023-2028</span><br class="school">Software Engineering at Ton Duc Thang University, Vietnam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------ Achievements ---------------------------------------------------------------------------->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="achievement-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Vietnam Datathon 2023 : 24hrs Hackthon</h2>
+                <a href="Datathon.html"style="font-size:24px;">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>CS50 Articial Intelligence with Python</h2>
+                <a href="CS50.html"style="font-size:24px;">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-car"></i>
+                <h2>Introduction to Self-Driving Car</h2>
+                <a href="Car.html"style="font-size:24px;">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>IBM AI Engineering Certificate</h2>
+                <a href="IBM.html"style="font-size:24px;">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------portfolio------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/p1.jpeg">
+                <div class="layer">
+                    <h3>ROAD DETECTION</h3>
+                    <p>For detailed information on my project, kindly visit the provided link.
+                    </p>
+                    <a href="images/project1.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p2.jpeg">
+                <div class="layer">
+                    <h3>TASK APPLICATION</h3>
+                    <p>For detailed information on my project, kindly visit the provided link.
+                    </p>
+                    <a href="images/project4.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p3.jpeg">
+                <div class="layer">
+                    <h3>FACE EMOTION DETECTION</h3>
+                    <p>For detailed information on my project, kindly visit the provided link.
+                    </p>
+                    <a href="javascript:void(0);" id="openEmotionModal"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p4.jpeg">
+                <div class="layer">
+                    <h3>SPIKING NEURAL NETWORK </h3>
+                    <p>For detailed information on my project, kindly visit the provided link.
+                    </p>
+                    <a href="images/project2.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Phyo991" class="btn">See more</a>
+
+    </div>
+</div>
+<!-----------------------------contact------------------------------------------>
+<div id="contact">
+    <div class="containter">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>phyotheingi850@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+84779097049</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/phyo.theingi.9212/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Phyo991"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/phyo-theingi-752aaa19b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" rerquired>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Designed & built by Phyo
+            ©2024 present , All rights reserved
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygapmFc85BqHB37o8KKm8DXquMW6o0N-KlKvOnw4OUIKplkVKV1Dj8-JDJVHJUiteQXQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Messag sent successfully"
+            setTimeout(function(){
+                msg.innerHtML = ""
+            }, 5000)
+            form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+<!-- Emotion Detection Modal -->
+<div id="emotionModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Would you like to try Face Emotion Detection?</p>
+        <button id="yesEmotion">Yes</button>
+        <button id="noEmotion" class="close">No</button>
+    </div>
+</div>
+
+  <!-- Modal CSS (You can move this to your external CSS file) -->
+  <style>
+  .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); }
+  .modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 30%; }
+  .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; }
+  .close:hover, .close:focus { color: black; text-decoration: none; cursor: pointer; }
+  </style>
+  
+  <script>
+    // Existing modal functionality code...
+    
+    document.getElementById("yesEmotion").addEventListener("click", function() {
+        // Attempt to access the webcam
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    // Here, you would either display the video stream in a <video> element on your page
+                    // or handle the stream in a way that integrates with your emotion detection backend
+                    console.log("Camera access granted");
+                    // Example: Display the stream in a <video> element
+                    var video = document.createElement('video');
+                    video.srcObject = stream;
+                    video.play();
+                    document.body.appendChild(video); // You might want to append this video element more strategically
+    
+                    // Close the modal
+                    document.getElementById("emotionModal").style.display = "none";
+                })
+                .catch(function(error) {
+                    console.log("Camera access denied", error);
+                    // Handle the error, such as displaying a message to the user
+                });
+        }
+    });
+    
+    // Close modal on "No" or clicking the close button
+    document.getElementById("noEmotion").addEventListener("click", function() {
+        document.getElementById("emotionModal").style.display = "none";
+    });
+    </script>
+    
+    
+     
+</body>
+
+</html>
+
+
+
